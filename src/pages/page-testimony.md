@@ -58,8 +58,7 @@ const testimonies = [
   {
     id: '1',
     name: 'Exito',
-    description:
-      '¡Increíble! ¡He duplicado mis ventas gracias el exelente trabajo de itglobers!',
+    description: 'Id unico, para el cambio de idioma',
     image: 'https://example.com/images/exito.jpg',
     alt: 'Imagen de logo exito',
     className: 'my-class',
