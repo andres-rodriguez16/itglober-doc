@@ -15,29 +15,13 @@ npm install swiper
 | --------- | ---------------------- | -------------------------------------------------------------------------------------- |
 | `data`    | `Array<TestimonyItem>` | Un arreglo de objetos que representan los testimonios que se mostrarán en el carrusel. |
 
-## Interfaz `TestimonyItem`
-
-La interfaz `TestimonyItem` describe la estructura de cada objeto de testimonio en el arreglo `data`.
-
-```typescript
-interface TestimonyItem {
-  id: string;
-  name: string;
-  description: string;
-  image: string;
-  alt: string;
-  className: string;
-  link: string;
-}
-```
-
 ## Propiedades de TestimonyItem
 
 | Propiedad   | tipo   | Descripción                                                                    |
 | ----------- | ------ | ------------------------------------------------------------------------------ |
 | id          | string | El identificador único del testimonio.                                         |
 | name        | string | Nombre de la empresa.                                                          |
-| description | string | id unico de La descripción o contenido del testimonio.                         |
+| description | string | Id unico de La descripción o contenido del testimonio.                         |
 | image       | string | URL de la imagen del autor del testimonio.                                     |
 | alt         | string | Texto alternativo para la imagen del autor del testimonio                      |
 | className   | string | La clase CSS adicional para aplicar a la imagen del autor del testimonio.      |
@@ -50,13 +34,27 @@ Para español, agrega las traducciones en el archivo ../Messages/es/template/rev
 
 Mantener identificadores únicos para los textos en estas propiedades te permitirá implementar el cambio de idioma de manera eficiente y consistente en tu aplicación. Asegúrate de definir las traducciones correspondientes en los archivos de mensajes para cada idioma que desees admitir en tu aplicación.
 
+## Cómo Agregar o Modificar un Testimonio
+
+Para modificar o agregar un testimonio al carrusel, sigue estos pasos:
+
+- Abre el archivo con la ruta"../assets/img/images/succesStories/data.ts" que contiene el arreglo con todos los testimonios.
+- Busca el arreglo llamado testimonyShopping, que almacena los testimonios.
+- Modifica el objeto existente o agrega un nuevo objeto al arreglo con las propiedades correspondientes de TestimonyItem.
+- Guarda los cambios en el archivo data.ts.
+
+`Nota`: recuerda que si vas a agregar o modificar la propiedad **description** seguir los pasos mencionados anteriormente para implementar el cambio de idioma de manera eficiente.
+
+Una vez que hayas modificado o agregado el testimonio en el archivo data.ts, el componente Testimony utilizará automáticamente los datos actualizados al renderizarse.
+
+Recuerda asegurarte de seguir la estructura y tipos de datos definidos en la interfaz TestimonyItem para mantener la coherencia y evitar errores.
+
 ## Ejemplo de uso
 
 ```js
 import { Testimony } from './components/Testimony';
-import { TestimonyItem } from './interfaces/Testimony';
 
-const testimonies: TestimonyItem[] = [
+const testimonies = [
   {
     id: '1',
     name: 'Exito',
