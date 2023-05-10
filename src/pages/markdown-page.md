@@ -1,8 +1,9 @@
-# Componente ServiceList
+# Componente ServiceList react
 
 [![services.png](https://i.postimg.cc/MKxq3C2h/services.png)](https://postimg.cc/xqswcFdR)
 
-El componente `ServiceList` es un componente de React que muestra una lista de servicios en forma de carrusel utilizando la biblioteca Swiper.
+El componente `ServiceList` es un componente de React que muestra una lista de servicios en forma de carrusel utilizando la biblioteca Swiper. Usamos el
+siguiente comando para instalar swiper desde la terminal:
 
 ```js
 npm install swiper
@@ -69,17 +70,30 @@ Swiper es una biblioteca de desplazamiento de diapositivas altamente personaliza
 - type (string): El tipo de paginación. En este ejemplo, se utiliza "bullets" para mostrar puntos.
 - clickable (boolean): Indica si los puntos de paginación son interactivos y pueden hacer clic.
 
-Enlaces
-Puedes encontrar más información sobre Swiper en la [http://swiperjs.com/swiper-api](http://swiperjs.com/swiper-api 'Swiper').
+#### Así sería la configuración de swiper:
+
+```js
+<Swiper
+    modules={[Navigation, Autoplay, Pagination]}
+    direction={orientation}
+    speed={800}
+    slidesPerView={1}
+    className="slider__services"
+    pagination={{
+      type: "bullets",
+      clickable: true,
+    }}
+  >
+```
+
+Puedes encontrar más información sobre Swiper en [http://swiperjs.com/swiper-api](http://swiperjs.com/swiper-api 'Swiper').
 
 ## SwiperSlide
 
-El componente SwiperSlide es parte de la biblioteca Swiper y se utiliza para representar una diapositiva individual dentro de un carrusel en React. Aquí tienes un ejemplo de cómo se agrega un `SwiperSlide` con `ServiceItem` :
+El componente SwiperSlide es parte de la biblioteca Swiper y se utiliza para representar una diapositiva individual dentro de un carrusel en React. Aquí tienes un ejemplo de cómo se agrega un `SwiperSlide`:
 
 ```jsx
-<SwiperSlide>
-  <ServiceItem />
-</SwiperSlide>
+<SwiperSlide>diapositivas</SwiperSlide>
 ```
 
 ## ServiceItem
@@ -109,18 +123,20 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 ### Uso
 
-Aquí tienes un ejemplo de cómo se utiliza el componente `ServiceItem`:
+Aquí tienes un ejemplo de cómo se utiliza el componente `ServiceItem` junto con SwiperSlide:
 
 ```jsx
-<ServiceItem
-  title='slider-title-create'
-  text='slider-paragraph-create'
-  nextSecondBtn='slider-title-design'
-  nextThirdBtn='slider-tittle-support'
-  nextFourthBtn='slider-title-trainings'
-  nextBtn='slider-title-Technical'
-  desktopImage={imageDesktop}
-  image={imageMobile}
-  altText='soporte y mantenimiento'
-/>
+<SwiperSlide>
+  <ServiceItem
+    title='slider-title-create'
+    text='slider-paragraph-create'
+    nextSecondBtn='slider-title-design'
+    nextThirdBtn='slider-tittle-support'
+    nextFourthBtn='slider-title-trainings'
+    nextBtn='slider-title-Technical'
+    desktopImage={imageDesktop}
+    image={imageMobile}
+    altText='soporte y mantenimiento'
+  />
+</SwiperSlide>
 ```
