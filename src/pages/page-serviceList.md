@@ -115,6 +115,7 @@ El componente acepta las siguientes props:
 
 Para inglés, agrega las traducciones en el archivo ../Messages/en/template/services.ts.
 Para español, agrega las traducciones en el archivo ../Messages/es/template/services.ts.
+
 Mantener identificadores únicos para los textos en estas propiedades te permitirá implementar el cambio de idioma de manera eficiente y consistente en tu aplicación. Asegúrate de definir las traducciones correspondientes en los archivos de mensajes para cada idioma que desees admitir en tu aplicación.
 
 - `desktopImage` (any): La imagen de la diapositiva para dispositivos de escritorio.
