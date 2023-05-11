@@ -2,8 +2,9 @@
 
 [![testimony.png](https://i.postimg.cc/tJK2FBf0/testimony.png)](https://postimg.cc/BPCT0B4N)
 
-El componente `Testimony` se encarga de mostrar testimonios en formato de carrusel deslizante. Utiliza la biblioteca Swiper para la funcionalidad del carrusel.Usamos el
-siguiente comando para instalar swiper desde la terminal:
+El componente `Testimony` se encarga de mostrar testimonios en formato de carrusel deslizante. Utiliza la biblioteca Swiper para la funcionalidad del carrusel.
+
+## Instalación de swiper
 
 ```js
 npm install swiper
