@@ -50,9 +50,6 @@ Recuerda que al definir la propiedad src de un objeto TestimonyObject, debes ase
 ```js
 import { Client } from './ruta/al/componente/Client';
 
-import React from 'react';
-import { Client } from './ruta/al/componente/Client';
-
 const App = () => {
   const clientsData = [
     {
