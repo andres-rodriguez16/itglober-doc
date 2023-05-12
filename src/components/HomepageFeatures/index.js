@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Fácil de Usar',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        La página web de ITGlobers fue diseñada desde cero para ser fácilmente instalada y utilizada, para que puedas contactarnos y saber más sobre nosotros de manera sencilla.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Enfocarse en lo que Importa',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        ITGlobers te permite centrarte en las facilidades para hacer un sitio web dinámico, mientras nosotros promocionamos servicios y empleo. Utilizamos la potente biblioteca de <code>Swiper</code> para nuestros sliders, con una gran facilidad de uso..
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Impulsado por React',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+       Esta página utiliza TypeScript y React, incluso Scss. ITGlobers puede ser ampliado mientras se reutiliza el mismo encabezado y pie de página, incluso el componente de traducción con su contexto.
       </>
     ),
   },

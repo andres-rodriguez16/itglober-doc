@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -70,7 +70,8 @@ const config = {
     
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Home Page',
+        title: 'Página principal',
+        hideOnScroll: true,
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -82,10 +83,9 @@ const config = {
           //   position: 'left',
           //   label: 'Tutorial',
           // },
-          {to: '/pages', label: 'Pages', position: 'left'},
-
+          {to: '/pages', label: 'Páginas', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ITGlobers/itglobers-website',
             label: 'GitHub',
             position: 'right',
           },
@@ -96,46 +96,56 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Comunidad',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/itglobers/mycompany/',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/explore/tags/itglobers/',
+              },
+              {
+                label: 'GrupoAkaes',
+                href: 'https://www.grupoakaes.com',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Colaboradores',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'David Barona',
+                to: 'https://github.com/Davidbarona',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Cristian Ramirez',
+                to: 'https://github.com/imchristiandev',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Andres Rodriguez',
+                to: 'https://github.com/andres-rodriguez16',
+              },
+              {
+                label: 'Sergio Yepes',
+                to: 'https://github.com/SergioYepes',
               },
             ],
           },
+          
           {
-            title: 'More',
+            title: 'Más',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ITGlobers',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Documentación ITGlobers, Inc. Construido con Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
