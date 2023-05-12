@@ -43,7 +43,7 @@ Para modificar o agregar un cliente al carrusel, sigue estos pasos:
 
 - Utilizar un enlace externo para la imagen. En este caso, puedes proporcionar directamente la URL de la imagen externa que deseas utilizar.
 
-Recuerda que al definir la propiedad src de un objeto TestimonyObject, debes asegurarte de que corresponda a una de estas opciones. Esto permitirá que las imágenes se carguen correctamente en el componente Client.
+Recuerda que al definir la propiedad src de un objeto clientsItem, debes asegurarte de que corresponda a una de estas opciones. Esto permitirá que las imágenes se carguen correctamente en el componente Client.
 
 ## Ejemplo de uso
 
