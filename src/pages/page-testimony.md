@@ -89,18 +89,6 @@ El componente SwiperSlide es parte de la biblioteca Swiper y se utiliza para rep
 
 Para inglés, agrega las traducciones en el archivo ../Messages/en/template/reviews.ts
 Para español, agrega las traducciones en el archivo ../Messages/es/template/reviews.ts
-
-Mantener identificadores únicos para los textos en estas propiedades te permitirá implementar el cambio de idioma de manera eficiente y consistente en tu aplicación. Asegúrate de definir las traducciones correspondientes en los archivos de mensajes para cada idioma que desees admitir en tu aplicación.
-
-### Cómo Agregar o Modificar un Testimonio
-
-Para modificar o agregar un testimonio al carrusel, sigue estos pasos:
-
-- Abre el archivo con la ruta"../assets/img/images/succesStories/data.ts" que contiene el arreglo con todos los testimonios.
-- Busca el arreglo llamado testimonyShopping, que almacena los testimonios.
-- Modifica el objeto existente o agrega un nuevo objeto al arreglo con las propiedades correspondientes de TestimonyItem.
-- Guarda los cambios en el archivo data.ts.
-
 ### Ejemplo
 
 ```js
@@ -112,6 +100,17 @@ const messages = {
 
 export default messages;
 ```
+
+Mantener identificadores únicos para los textos en estas propiedades te permitirá implementar el cambio de idioma de manera eficiente y consistente en tu aplicación. Asegúrate de definir las traducciones correspondientes en los archivos de mensajes para cada idioma que desees admitir en tu aplicación.
+
+### Cómo Agregar o Modificar un Testimonio
+
+Para modificar o agregar un testimonio al carrusel, sigue estos pasos:
+
+- Abre el archivo con la ruta"../assets/img/images/succesStories/data.ts" que contiene el arreglo con todos los testimonios.
+- Busca el arreglo llamado testimonyShopping, que almacena los testimonios.
+- Modifica el objeto existente o agrega un nuevo objeto al arreglo con las propiedades correspondientes de TestimonyItem.
+- Guarda los cambios en el archivo data.ts.
 
 Una vez que hayas modificado o agregado el testimonio en el archivo data.ts, el componente Testimony utilizará automáticamente los datos actualizados al renderizarse.
 
