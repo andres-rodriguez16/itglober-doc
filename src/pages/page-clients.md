@@ -10,6 +10,51 @@ El componente Client se utiliza para mostrar una sección de clientes en el siti
 npm install swiper
 ```
 
+## Propiedades de swiper
+
+- `autoplay`: Un objeto que configura la reproducción automática del carrusel. En el ejemplo, se establece un retraso de reproducción de 6000 ms (6 segundos).
+
+- `slidesPerView`: Define el número de elementos que se mostrarán en cada vista del carrusel. En el ejemplo, se utiliza la variable **grid** para adaptar el tamaño del carrusel según el tamaño de la pantalla. Esto significa que la cantidad de elementos visibles se ajustará automáticamente para brindar una experiencia óptima en diferentes dispositivos y tamaños de pantalla.
+
+- `grid`: Un objeto que configura el diseño en forma de cuadrícula del carrusel. En el ejemplo, se especifica el número de filas (`rows`) en 3.
+
+- `pagination`: Un objeto que configura la paginación del carrusel. En el ejemplo, se habilita la paginación clickable y se utilizan bullets dinámicos.
+
+- `modules`: Un array que contiene los módulos adicionales de Swiper que se utilizarán en el carrusel. En el ejemplo, se utilizan los módulos `Grid`, `Pagination` y `Autoplay`.
+
+- `className`: Una cadena que define la clase CSS aplicada al componente `<Swiper>`. En el ejemplo, se establece en `'client__slider--grid'`.
+
+### Así sería la configuración de swiper:
+
+```js
+<Swiper
+    autoplay={{
+      delay: 6000,
+    }}
+    slidesPerView={grid}
+    grid={{
+      rows: 3,
+    }}
+    pagination={{
+      clickable: true,
+      dynamicBullets: true,
+      dynamicMainBullets: 2,
+    }}
+    modules={[Grid, Pagination, Autoplay]}
+    className='client__slider--grid'    
+  >
+```
+
+Puedes encontrar más información sobre Swiper en [http://swiperjs.com/swiper-api](http://swiperjs.com/swiper-api 'Swiper').
+
+### SwiperSlide
+
+El componente SwiperSlide es parte de la biblioteca Swiper y se utiliza para representar una diapositiva individual dentro de un carrusel en React. Aquí tienes un ejemplo de cómo se agrega un `SwiperSlide`:
+
+```jsx
+<SwiperSlide>diapositivas</SwiperSlide>
+```
+
 ## Props
 
 La interfaz clientsItem tiene una sola propiedad:
@@ -18,7 +63,7 @@ La interfaz clientsItem tiene una sola propiedad:
 | --------- | -------------------- | --------------------------------------------------------------------- |
 | `data`    | `Array<clientsItem>` | Un arreglo de objetos que representan la información de los clientes. |
 
-## Propiedades de clientsItem
+### Propiedades de clientsItem
 
 | Propiedad | tipo   | Descripción                                          |
 | --------- | ------ | ---------------------------------------------------- |
@@ -28,7 +73,7 @@ La interfaz clientsItem tiene una sola propiedad:
 
 Asegúrate de utilizar estas propiedades e interfaces correctamente al trabajar con el componente Client y sus datos asociados.
 
-## Cómo Agregar o Modificar un cliente
+### Cómo Agregar o Modificar un cliente
 
 Para modificar o agregar un cliente al carrusel, sigue estos pasos:
 

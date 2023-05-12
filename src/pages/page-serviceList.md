@@ -62,7 +62,7 @@ Swiper es una biblioteca de desplazamiento de diapositivas altamente personaliza
 ## Propiedades
 
 - modules (array): Una matriz de módulos adicionales a importar. En este ejemplo, se están utilizando los módulos Navigation, Autoplay y Pagination.
-- direction (string): La dirección del desplazamiento de las diapositivas. Puede ser 'horizontal' o 'vertical'.
+- direction (string): Define la dirección de desplazamiento de las diapositivas en el carrusel. Puede ser 'horizontal' o 'vertical'. En este caso, se utiliza la variable orientation para determinar la orientación del carrusel en función del tamaño de la pantalla. Esto permite que el carrusel se adapte automáticamente y cambie su orientación según las necesidades, brindando una experiencia de usuario más adecuada.
 - speed (number): La velocidad de transición en milisegundos.
 - slidesPerView (number): El número de diapositivas visibles al mismo tiempo.
 - className (string): Una clase CSS opcional para personalizar el estilo del componente.
@@ -117,6 +117,18 @@ Para inglés, agrega las traducciones en el archivo ../Messages/en/template/serv
 Para español, agrega las traducciones en el archivo ../Messages/es/template/services.ts.
 
 Mantener identificadores únicos para los textos en estas propiedades te permitirá implementar el cambio de idioma de manera eficiente y consistente en tu aplicación. Asegúrate de definir las traducciones correspondientes en los archivos de mensajes para cada idioma que desees admitir en tu aplicación.
+
+### Ejemplo
+
+```js
+const messages = {
+  id: 'contenido',
+  'review-id-1': 'Esta es la primera reseña.',
+  // Agrega más traducciones según sea necesario
+};
+
+export default messages;
+```
 
 - `desktopImage` (any): La imagen de la diapositiva para dispositivos de escritorio.
 - `image` (any): La imagen de la diapositiva para dispositivos móviles.
