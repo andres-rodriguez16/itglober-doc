@@ -2,7 +2,7 @@
 
 Estos son Los componentes que conforman la pagina de ITGlobers
 * [Servicios](https://itglober-doc.vercel.app/page-serviceList 'Servicios')
-* [Paises](https://itglober-doc.vercel.app/page-serviceList 'Paises')
+* [Paises](https://itglober-doc.vercel.app/page-countries 'Paises')
 * [Testimonios](https://itglober-doc.vercel.app/page-clients 'Testimonios')
 * [Clientes](https://itglober-doc.vercel.app/page-clients 'Clientes')
 * [Reseñas](https://itglober-doc.vercel.app/page-clients 'Reseñas')
