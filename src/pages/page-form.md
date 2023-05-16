@@ -24,7 +24,7 @@ El componente FormName renderiza un `<input/>` tipo text que guardaria el nombre
 | `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
 
-## Propiedades de FormName
+### Propiedades de FormName
 
 - `type`: Es la forma que toma el `<input/>` en este caso es `text`.
 - `className`: Es el Id clase que se usa para el scss y sus respectivos estilos.
@@ -45,7 +45,7 @@ El componente FormEmail renderiza un `<input/>` tipo text que guardaria el Corre
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
-## Propiedades de FormEmail
+### Propiedades de FormEmail
 
 - `type`: Es la forma que toma el `<input/>` en este caso es `text`.
 - `className`: Es el Id clase que se usa para el scss y sus respectivos estilos.
@@ -67,7 +67,7 @@ El componente PhoneInputWithSelect renderiza un `<input/>` tipo text que guarda 
 | `value`    | `String` | Un String que guardaria el valor ingresado por el Usario |
 | `setValue` | `React.Dispatch<React.SetStateAction<string>>`                | Una propiedad que permite el cambio del valor al estado que se le este asignando actualmente          |
 
-## Propiedades de PhoneInput
+### Propiedades de PhoneInput
 
 - `className` : Clase de scss que permite ajustar los estilos visuales.
 - `placeholder` : Toma el valor de un string para el espacio reservado.
@@ -106,7 +106,7 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 El componente FormTextArea permite generar un `<input/>` tipo textarea para la información adicional que desea dejar el usuario estas son sus propiedades:
 
-## Propiedades en Form
+### Propiedades en Form
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -123,7 +123,7 @@ Para español, agrega las traducciones en el archivo ../Messages/es/template/rev
 
 Mantener identificadores únicos para los textos en estas propiedades te permitirá implementar el cambio de idioma de manera eficiente y consistente en tu aplicación. Asegúrate de definir las traducciones correspondientes en los archivos de mensajes para cada idioma que desees admitir en tu aplicación.
 
-## Propiedades de FormTextArea
+### Propiedades de FormTextArea
 
 - `className` : Clase de scss que permite ajustar los estilos visuales.
 - `name`: Nombre del textArea
@@ -137,14 +137,14 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 Este componente nos permite generar un `<input/>` tipo checkBox para que el usuario determine si se aceptaron o no politicas de tratatmiento de datos estas serian sus propiedades:
 
-## Propiedades en Form
+### Propiedades en Form
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `checked`    | `Boolean` | Determina el cambio de estado si se ha seleccionado o no |
 | `onChange` | `(event: React.ChangeEvent<HTMLInputElement>) => void;`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
 
-## Propiedades de FormCheckBox
+### Propiedades de FormCheckBox
 
 - `className` : Clase de scss que permite ajustar los estilos visuales.
 - `onChange` : Es la función que permite el cambio del `<input/>`.
@@ -166,7 +166,7 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 Este componente genera un captcha que cerciora el hecho de que el usuario es un humano, usa la libreria [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha "captcha") en su version 2 que es la gratuita
 
-## Propiedades en Form
+### Propiedades en Form
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
