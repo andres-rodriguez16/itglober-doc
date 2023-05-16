@@ -61,7 +61,7 @@ El componente FormEmail renderiza un `<input/>` tipo text que guardaria el Corre
 
 El componente PhoneInputWithSelect renderiza un `<input/>` tipo text que guarda valores numericos para agregar el telefono de los usuarios, para ello, usamos la libreria [react-phone-number-input](https://www.npmjs.com/package/react-phone-number-input 'react-phone-number-input') de la cual tomamos el componente nativo de la misma PhoneInput, y usamos las validaciones que proporciona la libreria, las cuales son `isValidPhoneNumber` y `getCountryCallingCode`
 
-### Instalación de swiper
+### Instalación de React-phone
 
 ```js
 npm install react-phone-number-input
@@ -173,7 +173,7 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 Este componente genera un captcha que cerciora el hecho de que el usuario es un humano, usa la libreria [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha "captcha") en su version 2 que es la gratuita
 
-### Instalación de swiper
+### Instalación de React-Google-Recaptcha
 
 ```js
 npm install react-google-recaptcha
