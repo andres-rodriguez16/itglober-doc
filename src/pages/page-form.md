@@ -87,9 +87,9 @@ El componente FormFile es un `<input/>` tipo file que permite cargar un archivo 
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `file`    | `String \| File` | Un String que guardaria el valor ingresado por el Usario |
+| `file`    | `String | File` | Un String que guardaria el valor ingresado por el Usario |
 | `onChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
-| `fileName`    | `String \| File` | Un String que renderiza el valor ingresado por el Usario |
+| `fileName`    | `String | File` | Un String que renderiza el valor ingresado por el Usario |
 | `fileSizeInKB`    | `Number` | Es donde deberia ir la cantidad de bits del tamaño del archivo en este caso KB |
 | `ref`    | `HTMLInputElement` | Esta propiedad se usa para localizar de donde se estan tomando los datos |
 | `id`    | `String` | Un identificador único que se utiliza para el cambio de idioma y la traducción del placeholder. |
@@ -112,7 +112,7 @@ El componente FormTextArea permite generar un `<input/>` tipo textarea para la i
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una propiedad que permite el cambio del valor al estado que se le este asignando actualmente          |
-| `className`    | `Scss Class \| String` | Un String que determina la clase que se usa para dar los estilos visuales del `<input/>` |
+| `className`    | `Scss Class | String` | Un String que determina la clase que se usa para dar los estilos visuales del `<input/>` |
 | `id`    | `String` | Un identificador único que se utiliza para el cambio de idioma y la traducción del placeholder. |
 
 Nota : Asegúrate de que el texto proporcionado en la propiedad **id** sea un identificador único que servirá para el cambio de idioma. Puedes agregar las traducciones correspondientes en los archivos de mensajes para cada idioma, como se muestra a continuación:
@@ -171,4 +171,4 @@ Este componente genera un captcha que cerciora el hecho de que el usuario es un 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `siteKey`    | `String` | Es un codigo único proporcionado por la API de google |
-| `onChange` | `((token: string \| null) => void) \| undefined`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
+| `onChange` | `((token: string | null) => void) , | undefined`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
