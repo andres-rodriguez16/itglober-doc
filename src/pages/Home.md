@@ -2,7 +2,7 @@
 
 En este apartado veras la lista de los componentes que conforman el componente principal de la pagina Home.
 
-* [Traduccion](https://itglober-doc.vercel.app/page-languaje 'Traduccion')
+* [Traduccion](https://itglober-doc.vercel.app/page-language 'Traduccion')
 * [Servicios](https://itglober-doc.vercel.app/page-serviceList 'Servicios')
 * [Paises](https://itglober-doc.vercel.app/page-countries 'Paises')
 * [Testimonios](https://itglober-doc.vercel.app/page-testimony 'Testimonios')
@@ -11,7 +11,7 @@ En este apartado veras la lista de los componentes que conforman el componente p
 
 ## Traduccion
 El componente `Translate` es un componente con contexto global que permite traducir de ingles a español los textos de la pagina en general incluyendo footer, header e imagenes
-* [Traduccion](https://itglober-doc.vercel.app/page-languaje 'Traduccion')
+* [Traduccion](https://itglober-doc.vercel.app/page-language 'Traduccion')
 
 
 ## Servicios
