@@ -24,7 +24,7 @@ El componente FormName renderiza un `<input/>` tipo text que guardaria el nombre
 | `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
 
-## Propiedades de FormName
+### Propiedades de FormName
 
 - `type`: Es la forma que toma el `<input/>` en este caso es `text`.
 - `className`: Es el Id clase que se usa para el scss y sus respectivos estilos.
@@ -45,7 +45,7 @@ El componente FormEmail renderiza un `<input/>` tipo text que guardaria el Corre
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
-## Propiedades de FormEmail
+### Propiedades de FormEmail
 
 - `type`: Es la forma que toma el `<input/>` en este caso es `text`.
 - `className`: Es el Id clase que se usa para el scss y sus respectivos estilos.
@@ -58,7 +58,14 @@ El componente FormEmail renderiza un `<input/>` tipo text que guardaria el Corre
 
 ## PhoneInputWithSelect
 
+
 El componente PhoneInputWithSelect renderiza un `<input/>` tipo text que guarda valores numericos para agregar el telefono de los usuarios, para ello, usamos la libreria [react-phone-number-input](https://www.npmjs.com/package/react-phone-number-input 'react-phone-number-input') de la cual tomamos el componente nativo de la misma PhoneInput, y usamos las validaciones que proporciona la libreria, las cuales son `isValidPhoneNumber` y `getCountryCallingCode`
+
+### Instalación de React-phone
+
+```js
+npm install react-phone-number-input
+```
 
 ### Propiedades en Form
 
@@ -67,7 +74,7 @@ El componente PhoneInputWithSelect renderiza un `<input/>` tipo text que guarda 
 | `value`    | `String` | Un String que guardaria el valor ingresado por el Usario |
 | `setValue` | `React.Dispatch<React.SetStateAction<string>>`                | Una propiedad que permite el cambio del valor al estado que se le este asignando actualmente          |
 
-## Propiedades de PhoneInput
+### Propiedades de PhoneInput
 
 - `className` : Clase de scss que permite ajustar los estilos visuales.
 - `placeholder` : Toma el valor de un string para el espacio reservado.
@@ -87,9 +94,9 @@ El componente FormFile es un `<input/>` tipo file que permite cargar un archivo 
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `file`    | `String \| File` | Un String que guardaria el valor ingresado por el Usario |
+| `file`    | String \| File | Un String que guardaria el valor ingresado por el Usario |
 | `onChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
-| `fileName`    | `String \| File` | Un String que renderiza el valor ingresado por el Usario |
+| `fileName`    | String \| File | Un String que renderiza el valor ingresado por el Usario |
 | `fileSizeInKB`    | `Number` | Es donde deberia ir la cantidad de bits del tamaño del archivo en este caso KB |
 | `ref`    | `HTMLInputElement` | Esta propiedad se usa para localizar de donde se estan tomando los datos |
 | `id`    | `String` | Un identificador único que se utiliza para el cambio de idioma y la traducción del placeholder. |
@@ -106,13 +113,13 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 El componente FormTextArea permite generar un `<input/>` tipo textarea para la información adicional que desea dejar el usuario estas son sus propiedades:
 
-## Propiedades en Form
+### Propiedades en Form
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una propiedad que permite el cambio del valor al estado que se le este asignando actualmente          |
-| `className`    | `Scss Class \| String` | Un String que determina la clase que se usa para dar los estilos visuales del `<input/>` |
+| `className`    | Scss Class \| String | Un String que determina la clase que se usa para dar los estilos visuales del `<input/>` |
 | `id`    | `String` | Un identificador único que se utiliza para el cambio de idioma y la traducción del placeholder. |
 
 Nota : Asegúrate de que el texto proporcionado en la propiedad **id** sea un identificador único que servirá para el cambio de idioma. Puedes agregar las traducciones correspondientes en los archivos de mensajes para cada idioma, como se muestra a continuación:
@@ -123,7 +130,7 @@ Para español, agrega las traducciones en el archivo ../Messages/es/template/rev
 
 Mantener identificadores únicos para los textos en estas propiedades te permitirá implementar el cambio de idioma de manera eficiente y consistente en tu aplicación. Asegúrate de definir las traducciones correspondientes en los archivos de mensajes para cada idioma que desees admitir en tu aplicación.
 
-## Propiedades de FormTextArea
+### Propiedades de FormTextArea
 
 - `className` : Clase de scss que permite ajustar los estilos visuales.
 - `name`: Nombre del textArea
@@ -137,14 +144,14 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 Este componente nos permite generar un `<input/>` tipo checkBox para que el usuario determine si se aceptaron o no politicas de tratatmiento de datos estas serian sus propiedades:
 
-## Propiedades en Form
+### Propiedades en Form
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `checked`    | `Boolean` | Determina el cambio de estado si se ha seleccionado o no |
 | `onChange` | `(event: React.ChangeEvent<HTMLInputElement>) => void;`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
 
-## Propiedades de FormCheckBox
+### Propiedades de FormCheckBox
 
 - `className` : Clase de scss que permite ajustar los estilos visuales.
 - `onChange` : Es la función que permite el cambio del `<input/>`.
@@ -166,9 +173,15 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 Este componente genera un captcha que cerciora el hecho de que el usuario es un humano, usa la libreria [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha "captcha") en su version 2 que es la gratuita
 
-## Propiedades en Form
+### Instalación de React-Google-Recaptcha
+
+```js
+npm install react-google-recaptcha
+```
+
+### Propiedades en Form
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `siteKey`    | `String` | Es un codigo único proporcionado por la API de google |
-| `onChange` | `((token: string \| null) => void) \| undefined`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
+| `onChange` | ((token: string \| null) => void) \| undefined                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
