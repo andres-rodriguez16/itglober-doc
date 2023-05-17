@@ -1,6 +1,6 @@
 # Contact Us
 
-Este es aparatado de la pagina de contactanos de ITGlobers la cual contiene estos componentes:
+Este es el apartado de la pagina de contactanos de ITGlobers la cual contiene estos componentes:
 
 * [Traduccion](https://itglober-doc.vercel.app/page-language 'Traduccion')
 * Form Header
