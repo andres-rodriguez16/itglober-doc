@@ -142,7 +142,7 @@ const allmessages = {
 };
 ```
 
-`Nota` : el nombre de la clave del obejto deber ser el mismo para texto de español como de ingles. Si no se mantiene la coherencia entre las claves de traducción en ambos idiomas, el cambio de idioma no funcionará correctamente y el texto no será traducido correctamente en la aplicación. Por lo tanto, es crucial asegurarse de que las claves de traducción sean idénticas en ambos idiomas para garantizar el correcto funcionamiento de la internacionalización.
+`Nota` : el nombre de la clave del objeto deber ser el mismo para texto de español como de ingles. Si no se mantiene la coherencia entre las claves de traducción en ambos idiomas, el cambio de idioma no funcionará correctamente y el texto no será traducido correctamente en la aplicación. Por lo tanto, es crucial asegurarse de que las claves de traducción sean idénticas en ambos idiomas para garantizar el correcto funcionamiento de la internacionalización.
 
 - Guarda los cambios realizados en el archivo Messages/Messages.tsx.
 
