@@ -55,15 +55,15 @@ luego traemos El objeto allmessages está estructurado como un objeto con dos pr
 const allmessages = {
   es: {
     seccion1: {
-      mensaje1: '¡Hola!',
-      mensaje2: '¡Bienvenido!',
+      'mensaje1': '¡Hola!',
+      'mensaje2': '¡Bienvenido!',
     },
     // ... más secciones y mensajes traducidos
   },
   en: {
     section1: {
-      mensaje1: '¡Hello!',
-      mensaje2: '¡welcome!',
+      'mensaje1': '¡Hello!',
+      'mensaje2': '¡welcome!',
     },
     // ... más secciones y mensajes traducidos
   },
@@ -80,7 +80,7 @@ proporcionado por react-intl acepta varias propiedades que se pueden utilizar pa
 
 - id: La propiedad "id" especifica la clave de traducción para obtener el texto traducido. Es importante que esta clave coincida exactamente con la clave correspondiente en el archivo de "allMessages" tanto en español como en inglés. Si no se mantiene la coherencia entre las claves de traducción en ambos idiomas, el cambio de idioma no funcionará correctamente y el texto no será traducido correctamente en la aplicación. Por lo tanto, es crucial asegurarse de que las claves de traducción sean idénticas en ambos idiomas para garantizar el correcto funcionamiento de la internacionalización.
 
-  #### Ejemplo de como se usa en la aplicacion
+#### Ejemplo de como se usa en la aplicacion
 
 ```tsx
 import { FormattedMessage } from 'react-intl';
@@ -97,9 +97,9 @@ export const Header = () => {
 
 ## Modo de Uso del Componente
 
-Para utilizar el componente LanguageSelector, sigue estos pasos:
+Para utilizar el componente Language, sigue estos pasos:
 
-1. Importa el componente LanguageSelector en el archivo donde desees mostrar el selector de idioma y Coloca el componente LanguageSelector en el lugar apropiado de tu interfaz de usuario.
+1. Importa el componente Language en el archivo donde desees mostrar el selector de idioma y Coloca el componente Language en el lugar apropiado de tu interfaz de usuario.
 
 ```tsx
 import <Language /> from './ruta';
@@ -131,18 +131,18 @@ Para cambiar o agregar un nuevo texto en tu aplicación, sigue estos pasos:
 const allmessages = {
   es: {
     section1: {
-      welcomeMessage: 'Bienvenido a mi aplicación!',
+      'welcomeMessage': 'Bienvenido a mi aplicación!',
     },
   },
   en: {
     section1: {
-      welcomeMessage: 'Welcome to My App!', // Cambia este texto
+      'welcomeMessage': 'Welcome to My App!', // Cambia este texto
     },
   },
 };
 ```
 
-`Nota` : el nombre de la clave del objeto deber ser el mismo para texto de español como de ingles. Si no se mantiene la coherencia entre las claves de traducción en ambos idiomas, el cambio de idioma no funcionará correctamente y el texto no será traducido correctamente en la aplicación. Por lo tanto, es crucial asegurarse de que las claves de traducción sean idénticas en ambos idiomas para garantizar el correcto funcionamiento de la internacionalización.
+`Nota` : El nombre de la clave del objeto deber ser el mismo para texto de español como de ingles. Si no se mantiene la coherencia entre las claves de traducción en ambos idiomas, el cambio de idioma no funcionará correctamente y el texto no será traducido correctamente en la aplicación. Por lo tanto, es crucial asegurarse de que las claves de traducción sean idénticas en ambos idiomas para garantizar el correcto funcionamiento de la internacionalización.
 
 - Guarda los cambios realizados en el archivo Messages/Messages.tsx.
 

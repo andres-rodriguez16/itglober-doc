@@ -24,37 +24,6 @@ import '../../../styles/service.scss';
 import { ServiceItem } from '../atoms/ServiceItem';
 ```
 
-## Estado y efecto de redimensionamiento
-
-El componente ServiceList utiliza los hooks useEffect y useState para manejar el estado y los efectos secundarios relacionados con el tamaño de la pantalla:
-
-```jsx
-const [isMobile, setIsMobile] = useState < boolean > (window.innerWidth < 768);
-const [orientation, setOrientation] = useState < TypeOrientation > 'vertical';
-
-useEffect(() => {
-  setOrientation(isMobile ? 'horizontal' : 'vertical');
-
-  function handleResize() {
-    setIsMobile(window.innerWidth < 768);
-  }
-
-  window.addEventListener('resize', handleResize);
-  return () => {
-    window.removeEventListener('resize', handleResize);
-  };
-}, [isMobile, orientation]);
-```
-
-Este`useEffect` es responsable de actualizar el estado de `orientación` basado en `isMobile`
-state y agregar un detector de eventos de cambio de tamaño a la ventana. Cuando el componente se monta o el
-Cambios de estado de `isMobile` u `orientación`, se llama a la función dentro del gancho `useEffect`. Él
-establece el estado de `orientación` en "horizontal" si `isMobile` es verdadero; de lo contrario, lo establece en
-"vertical". También define una función `handleResize` que actualiza el estado `isMobile` basado en
-el ancho interior de la ventana. Finalmente, agrega un detector de eventos de cambio de tamaño a la ventana que llama al
-función `handleResize` cuando se cambia el tamaño de la ventana. La sentencia `return` dentro de `useEffect`
-hook elimina el detector de eventos de cambio de tamaño cuando el componente se desmonta.
-
 # Swiper
 
 Swiper es una biblioteca de desplazamiento de diapositivas altamente personalizable para crear presentaciones interactivas y receptivas en aplicaciones web. Con Swiper, puedes crear fácilmente carrouseles deslizables y galerías de imágenes, entre otras funcionalidades.
@@ -122,7 +91,7 @@ Mantener identificadores únicos para los textos en estas propiedades te permiti
 
 ```js
 const messages = {
-  id: 'contenido',
+  'id': 'contenido',
   'review-id-1': 'Esta es la primera reseña.',
   // Agrega más traducciones según sea necesario
 };
