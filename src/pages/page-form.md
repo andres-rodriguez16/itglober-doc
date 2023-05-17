@@ -1,7 +1,6 @@
-# Componente Form
+# Moleculas del Formulario
 
-
-El Componente Form muestra un formulario de interaccion entre el cliente o nuevo empleador y la empresa, contiene por base varios inputs y un ReCaptcha
+En este apartado veremos los componentes del formulario de interaccion entre el cliente o nuevo empleador y la empresa, contiene por base varios inputs y un ReCaptcha
 
 ## Formulario
 
@@ -21,7 +20,7 @@ El componente FormName renderiza un `<input/>` tipo text que guardaria el nombre
 
  | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
+| `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usuario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
 
 ### Propiedades de FormName
@@ -43,7 +42,7 @@ El componente FormEmail renderiza un `<input/>` tipo text que guardaria el Corre
 
  | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
+| `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usuario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
 ### Propiedades de FormEmail
 
@@ -71,7 +70,7 @@ npm install react-phone-number-input
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `String` | Un String que guardaria el valor ingresado por el Usario |
+| `value`    | `String` | Un String que guardaria el valor ingresado por el Usuario |
 | `setValue` | `React.Dispatch<React.SetStateAction<string>>`                | Una propiedad que permite el cambio del valor al estado que se le este asignando actualmente          |
 
 ### Propiedades de PhoneInput
@@ -94,9 +93,9 @@ El componente FormFile es un `<input/>` tipo file que permite cargar un archivo 
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `file`    | String \| File | Un String que guardaria el valor ingresado por el Usario |
+| `file`    | String \| File | Un String que guardaria el valor ingresado por el Usuario |
 | `onChange` | `Function (event: type ANY) => void`                | Una Funcion que detecta el cambio de estado y evento para actualizar el valor          |
-| `fileName`    | String \| File | Un String que renderiza el valor ingresado por el Usario |
+| `fileName`    | String \| File | Un String que renderiza el valor ingresado por el Usuario |
 | `fileSizeInKB`    | `Number` | Es donde deberia ir la cantidad de bits del tamaño del archivo en este caso KB |
 | `ref`    | `HTMLInputElement` | Esta propiedad se usa para localizar de donde se estan tomando los datos |
 | `id`    | `String` | Un identificador único que se utiliza para el cambio de idioma y la traducción del placeholder. |
@@ -117,7 +116,7 @@ El componente FormTextArea permite generar un `<input/>` tipo textarea para la i
 
 | Propiedad | Tipo                     | Descripción                                                                                                                                                         |
 | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usario |
+| `formValue`    | `String` | Un String que guardaria el valor ingresado por el Usuario |
 | `handleChange` | `Function (event: type ANY) => void`                | Una propiedad que permite el cambio del valor al estado que se le este asignando actualmente          |
 | `className`    | Scss Class \| String | Un String que determina la clase que se usa para dar los estilos visuales del `<input/>` |
 | `id`    | `String` | Un identificador único que se utiliza para el cambio de idioma y la traducción del placeholder. |

@@ -80,7 +80,7 @@ proporcionado por react-intl acepta varias propiedades que se pueden utilizar pa
 
 - id: La propiedad "id" especifica la clave de traducción para obtener el texto traducido. Es importante que esta clave coincida exactamente con la clave correspondiente en el archivo de "allMessages" tanto en español como en inglés. Si no se mantiene la coherencia entre las claves de traducción en ambos idiomas, el cambio de idioma no funcionará correctamente y el texto no será traducido correctamente en la aplicación. Por lo tanto, es crucial asegurarse de que las claves de traducción sean idénticas en ambos idiomas para garantizar el correcto funcionamiento de la internacionalización.
 
-  #### Ejemplo de como se usa en la aplicacioncion
+  #### Ejemplo de como se usa en la aplicacion
 
 ```tsx
 import { FormattedMessage } from 'react-intl';
