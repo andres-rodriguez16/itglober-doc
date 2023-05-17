@@ -1,6 +1,6 @@
 ## Componente Countries.
 
-[![countries.png](https://i.postimg.cc/fW5FXrs1/countries.png)](https://postimg.cc/qghjHQzG)
+![countries.png](../assets/countries.png)
 
 El componente Countries muestra una lista de países junto con sus respectivas banderas, y los sitúa en su correspondiente continente dentro de un mapa.
 

@@ -1,6 +1,6 @@
 ## Componente selector language.
 
-[![language.png](https://i.postimg.cc/wTWGHjvF/language.png)](https://postimg.cc/JGkq5mjB)
+![language.png](../assets/language.png)
 
 El componente Language es responsable de mostrar un selector de idioma en la interfaz de usuario y gestionar el cambio de idioma en la aplicación.
 

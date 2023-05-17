@@ -1,6 +1,6 @@
 ## Componente Reviews
 
-[![reviews.png](https://i.postimg.cc/RhWYx73R/reviews.png)](https://postimg.cc/tnHkhVNZ)
+![reviews.png](../assets/reviews.png)
 
 El componente `Reviews` muestra una sección de reseñas deslizables utilizando el paquete Swiper. Permite a los usuarios ver múltiples reseñas en un carrusel interactivo.
 

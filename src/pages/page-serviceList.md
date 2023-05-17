@@ -1,6 +1,6 @@
 # Componente ServiceList react
 
-[![services.png](https://i.postimg.cc/MKxq3C2h/services.png)](https://postimg.cc/xqswcFdR)
+![services.png](../assets/services.png)
 
 El componente `ServiceList` es un componente de React que muestra una lista de servicios en forma de carrusel utilizando la biblioteca Swiper. Usamos el
 siguiente comando para instalar swiper desde la terminal:

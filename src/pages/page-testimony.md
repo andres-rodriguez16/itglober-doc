@@ -1,6 +1,6 @@
 # Componente Testimony
 
-[![testimony.png](https://i.postimg.cc/tJK2FBf0/testimony.png)](https://postimg.cc/BPCT0B4N)
+![testimony.png](../assets/testimony.png)
 
 El componente `Testimony` se encarga de mostrar testimonios en formato de carrusel deslizante. Utiliza la biblioteca Swiper para la funcionalidad del carrusel.
 

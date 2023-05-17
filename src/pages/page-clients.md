@@ -1,6 +1,6 @@
 ### Componente Client
 
-[![clients.png](https://i.postimg.cc/6qncdVLS/clients.png)](https://postimg.cc/xNjLQzZy)
+![clients.png](../assets/clients.png)
 
 El componente Client se utiliza para mostrar una sección de clientes en el sitio web. Esta sección incluye un carrusel deslizante con imágenes de los clientes. Utiliza la biblioteca Swiper para la funcionalidad del carrusel.
 
